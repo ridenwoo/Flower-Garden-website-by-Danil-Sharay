@@ -563,7 +563,7 @@ body {
     border: #6b8e4e solid 2px;
     margin: 0 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     overflow:hidden;
     
@@ -576,7 +576,6 @@ body {
     height: 300px;
     margin: 30px;
     display: flex;
-    padding: 40px;
 }
 
 .texting {
