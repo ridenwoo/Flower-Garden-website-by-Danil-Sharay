@@ -42,7 +42,7 @@ function onEntry(entry) {
     var submitCallbackBtn = document.querySelector(".submit-btn");
     var submitMsgBtn = document.querySelector(".submit-msg-btn");
 
-    // Открываем модальное окно для обратного звонка
+    // обратный звонок
     callbackLinks.forEach(function(link) {
         link.onclick = function(event) {
             event.preventDefault();
@@ -58,7 +58,7 @@ function onEntry(entry) {
         }
     }
 
-    // Закрываем модальные окна при клике на кнопку закрытия
+    // Закрываем  окно кнопку 
     closeBtns.forEach(function(btn) {
         btn.onclick = function() {
             var modal = btn.closest('.modal');
@@ -66,21 +66,21 @@ function onEntry(entry) {
         }
     });
 
-    // Закрываем модальное окно для обратного звонка при отправке формы
+    
     if (submitCallbackBtn) {
         submitCallbackBtn.onclick = function() {
             callbackModal.style.display = "none";
         }
     }
 
-    // Закрываем модальное окно для сообщения при отправке формы
+    
     if (submitMsgBtn) {
         submitMsgBtn.onclick = function() {
             messageModal.style.display = "none";
         }
     }
 
-    // Закрываем модальные окна при клике вне их области
+    // Закрываем  окна при клике вне 
     window.onclick = function(event) {
         if (event.target.classList.contains('modal')) {
             event.target.style.display = "none";
