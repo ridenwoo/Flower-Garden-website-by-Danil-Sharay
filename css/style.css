@@ -1,0 +1,1394 @@
+/*main*/
+body {
+    padding: 0;
+    margin: 0;
+    min-width: 1200px;
+    font-size: 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100%;
+
+    
+
+}
+.main-box {
+    width: 78.125%;
+    margin: auto;
+    background-color: #eaeeed;
+    min-width: 1570px;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+/*цвета*/
+.colorfull {
+    color: #eaeeed;
+    color: #8e9e81;
+    color: #c5c5c3;
+    color: #e2b689;
+    color: #526146;
+}
+/*ШРИФТЫ*/
+.cinzel {
+    font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.cinzelBold {
+    font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.robto-slab {
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.robto-slabBold {
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*menu*/
+.navbar {
+    box-shadow:0 15px 10px rgba(0,0, 0, .1) ;
+    z-index: 100;
+    
+    
+}
+@keyframes fixedMenu {
+  0%  {
+    height: 0px;
+  }
+  50% {
+    height: 80px;
+  }
+  100% {
+    height: 70px;
+  }
+}
+.navbar-fixed {
+    animation: fixedMenu 0.7s forwards;
+    position: fixed;
+    top: 0;
+    width: 78.125%;
+    z-index: 100;
+    opacity: 0.97;
+    min-width: 1570px;
+}
+
+.container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0;
+    background-color: #eaeeed;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 70px; /*размеры меню*/
+}
+
+.navbar-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    margin-right: 80px;
+    
+}
+
+.navbar-logo {
+    font-weight: 700;
+    font-size: 46px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-left: 40px;
+    font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.navbar-logo:hover {
+    opacity: 1;
+    color: #e2b689;
+}
+
+.callback {
+    margin-left: 35px;
+    padding: 10px;
+    padding-top: 15px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.65;
+    border-radius: 10px;
+    margin: 20px 3px 20px 0 ;
+    transition: all .15s ease-in-out;
+    font-family: "Roboto Slab", serif;
+}
+.callback:hover{
+    opacity: 1;
+    outline: 3px solid rgb(67, 168, 89);
+}
+
+
+.navbar-menu {
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-right: 20px;
+    transition: all .15s ease-in-out;
+    background-color: #eaeeed; 
+}
+
+.lli {
+    display: inline-block;
+    position: relative; 
+    text-decoration: none;
+    color: black;
+}
+
+.lli > a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 30px;
+    color: white; 
+    opacity: 0.65;
+    margin-left: 20px;
+    font-family: "Roboto Slab", serif;
+}
+
+.lli > a:hover {
+    opacity: 1;
+    background-color: #5a5a5a;
+    color: #eaeeed;
+    border: 1px solid #eaeeed;
+    transition: .7s;
+    outline: 2px solid #333333;
+    border-radius: 5px;
+    box-shadow: 1px 5px 10px -5px black;
+}
+
+/* Стили для подменю */
+.dws {
+    list-style: none;
+    padding-left: 0;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    display: none; 
+    background-color: #eaeeed; 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.lli:hover .dws {
+    display: block; 
+}
+
+.dws-li {
+    text-decoration: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.dws-li a {
+    display: block; 
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 30px;
+    color: white; 
+}
+
+.dws-li a:hover {
+    background-color: #555; 
+}
+
+
+.navbar-menu a {
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 30px;
+    color: black;
+    opacity: 0.65;
+    margin-left: 20px;
+    font-family: "Roboto Slab", serif;
+    display: block;
+}
+
+.navbar-menu a:hover {
+    opacity: 1;
+    background-color: #5a5a5a;
+    color: #eaeeed;
+    border: 1px solid #eaeeed;
+    transition: .7s;
+    outline: 2px solid #333333;
+    border-radius: 5px;
+    box-shadow: 1px 5px 10px -5px black;
+}
+.dws-right {
+    list-style: none;
+    padding-left: 0;
+    position: absolute;
+    top: 50%; /* Подменю на одном уровне с родительским элементом */
+    left: 100%; /* Подменю вправо от родительского элемента */
+    display: none; /* Скрываем подменю по умолчанию */
+    background-color: #eaeeed; /* Фон вложенного подменю */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Тень для подменю */
+    z-index: 10;
+}
+
+.dws-li:hover .dws-right {
+    display: block; /* Отображаем вложенное подменю при наведении на родительский элемент */
+}
+
+.dws-right-li {
+    text-decoration: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.dws-right-li a {
+    display: block; /* Ссылки внутри подменю как блоки */
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 30px;
+    color: #252525; /* Цвет текста */
+}
+
+.dws-right-li a:hover {
+    background-color: #5a5a5a; /* Фон при наведении на элементы подменю */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*header*/
+
+.container1{
+    background-color: #eaeeed;
+
+}
+.banner {
+    border: #526146 solid 4px;
+    margin: 40px 15px 40px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 1000px;
+    padding:10px;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 2;
+    
+
+}
+
+.title {
+    color: black;
+    width: 1000px;
+    height: 1000px;
+    background-color: #526146;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+
+.slidebox {
+    width: 1000px;
+    height: 1000px;
+    background-repeat: no-repeat;
+    
+    
+}
+/*плиточки*/
+/*.slidebox:hover {
+    transform: scale(1.1);
+    transition: 5s;
+    overflow: hidden;
+    z-index: -1;
+}*/
+
+
+.button-catalog {
+    width: 800px;
+    height: 900px;
+    margin: 20px;
+}
+
+.button-text {
+    width: 750px;
+    height: 680px;
+    margin: 25px;
+    
+}
+.button-text h1 {
+    font-family: "Cinzel", serif;
+    font-weight: 400;
+    font-size: 126px;
+    margin: 0;
+    color: black;
+    padding: 0;
+    text-align: center;
+
+    
+    
+    
+}
+.button-text  p {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    margin-left: 20px;
+    color: rgb(207, 202, 202);
+    font-size: 28px;
+    padding: 0;
+    margin-top: 150px;
+    font-weight: 700;
+
+
+}
+
+.button-rect {
+    background: #e2b689;
+    width: 560px;
+    height: 120px;
+    margin: 125px;
+    color: white;
+    transition: .2s linear;
+    border-radius: 10px;
+    margin-top: 80px;
+    text-align: center;
+    box-shadow: 0 0 20px #252525;
+    background-image: linear-gradient(to right, #7bc568 0%, #598f5c 51%, #7bc568 100%);
+    
+}
+.button-rect:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #e2b689;
+    text-transform: uppercase;
+    background-position: right center;
+}
+.button-rect p {
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+    font-family: "Roboto Slab", serif;
+}
+.button-rect a{
+    text-decoration: none;
+}
+
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+.element-animation {
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+
+
+
+
+
+
+
+
+
+/*section 1 столбики*/
+
+.pillar-box {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+}
+.container2 {
+    border:#526146 solid 4px;
+    margin: 00px 15px 0px 15px;
+    height: 1000px;
+    width: 1700px;
+    border-radius: 10px;
+    background-color: #303030;
+    overflow:hidden;
+    
+}   
+
+.pillars {
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:20px ;
+
+    
+}
+.pillar1 {
+    width: 300px;
+    height: 900px;
+    margin: 10px;   
+    background: #999;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 5px 5px 15px rgba(0,0, 0, .5);
+    overflow: hidden;
+}
+
+.pillar1 p {
+    font-size: 20px;
+    margin: 20px;
+}
+.pillar1 h1 {
+    font-size: 40px;
+    padding: 0px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    
+} 
+
+.pillars img {
+    width: 300px;
+    height: 900px;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.6s;
+}
+.pillars img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+.overlay-text {
+
+    color: #eaeeed;
+    font-family: "Roboto Slab", serif;
+    font-size: 13px;
+}
+ 
+.overlay {
+    height: 0;
+    background: linear-gradient(transparent,#2e2d2d 58%) ;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    font-size: 14px;
+    transition: height 0.7s ;
+    padding-top: 0px;
+}
+.overlay a {
+   margin-top: 10px;
+    color: #262626;
+    text-decoration: none;
+    font-size: 24px;
+    background: #fff;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 15px;
+
+}
+.pillar1Lhover img {
+    transform: scale(1.2);
+}
+.pillar1:hover .overlay {
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*преемущества*/
+
+.prop-box {
+    height: 400px;
+    border: #6b8e4e solid 2px;
+    margin: 0 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow:hidden;
+    
+}
+
+
+
+.text-box {
+    width: 700px;
+    height: 300px;
+    margin: 30px;
+    display: flex;
+    padding: 40px;
+}
+
+.texting {
+    width: 350px;
+}
+
+.text-box svg {
+    margin-top: 30px;
+    padding-right: 10px;
+}
+
+.texting p {
+    font-family: "Roboto Slab", serif;
+    font-size: 18px;
+
+}
+.texting h3 {
+    font-family: "Roboto Slab", serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: left;
+    padding-right: 30px;
+}
+.texting hr {
+    color: black ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*каталог плиток section 3*/
+.card-section{
+
+}
+.container3{
+    border: #6b8e4e solid 2px;
+    margin: 0 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plate-web{
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eaeeed;
+    border-radius: 10px;
+    min-width: 1570px;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.product {
+    border: #8e9e81 solid 4px;
+    width:300px ;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #252525;
+    font-family: "Roboto Slab", serif;
+    opacity: .9;
+    box-shadow: 0 0 20px #252525;
+    overflow: hidden;
+}
+.product:hover {
+    box-shadow: 0 0 0 4px white, 0 0 0 8px #353534;
+    background-position: right center;
+}
+
+
+
+.image {
+    width:290px ;
+    height: 390px;
+    margin: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.image img {
+    border-radius: 10px;
+}
+.image img:hover {
+    transform: scale(1.18);
+    transition: 2s;
+}
+.info {
+    width:290px ;
+    padding: 0;
+    margin: 5px;
+}
+.info h3 {
+    margin: 0;
+    padding: 5px;
+    margin-left: 20px;
+    color: #e2e2d7;
+    font-size: 32px;
+
+}
+
+.rating {
+    color: rgb(196, 155, 23);
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+    margin-top: 0;
+
+}
+.rating li {
+    display: inline-block;
+}
+.rating hr {
+    margin: 2px;
+    size: 1px;
+}
+
+.info-price {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #e2e2d7;
+}  
+.info-price p {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+.add-to-cart {
+    border: none;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    background-color: #75b63f;
+    border-radius: 10px;
+    color: #e2e2d7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 10px;
+}
+.add-to-cart:hover {
+    border-radius: 10px;
+    color: #6dcf1d;
+    border:  solid 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #6dcf1d;
+}
+
+.price {
+    margin: 30px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+.dispsostav {
+    overflow: hidden;
+    color: #961313;
+}
+
+
+
+
+
+
+
+
+/*секция информации section 4*/
+
+.information-box {
+
+}
+.container4 {
+    margin: 0 15px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow:hidden;
+}
+
+.info-box {
+    width: 1700px;
+    padding: 15px;
+    margin: 15px;
+    
+}
+
+.itb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #1f420b solid 2px;
+    margin: 25px;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    
+}
+.itb:hover {
+    transform: scale(1.03);
+    transition: 1s all ease-in-out;
+}
+
+.itb h3 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    padding: 5px;
+    margin-bottom: 0px;
+    padding-left: 50px;
+    font-size: 36px;
+}
+.icn {
+    font-size: 130px;
+    opacity: .75;
+}
+
+.itb hr {
+    width: 93%;
+}
+
+.itb p {
+    font-family: "Roboto Slab", serif;
+    padding-left: 50px;
+}
+
+
+
+
+
+/*текст между блоками*/
+.bestsellers {
+    font-size: 46px;
+    text-align: center;
+    justify-content: center;
+    font-family: "Satisfy", cursive;
+    font-weight: 200;
+}
+
+.why {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    justify-content: center;
+
+}
+
+.studio {
+    font-size: 46px;
+    text-align: center;
+    justify-content: center;
+    font-family: "Satisfy", cursive;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.footer {
+    margin-top: auto;
+    background-color: #252525;
+    width: 100%;
+    margin-top: 20px;
+
+}
+.our-info {
+    display: flex;
+    color: #eaeeed;
+    opacity: .8;
+}
+.inf-menu-foot {
+    margin-left: 50px;
+}
+.foot {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    
+
+}
+.container-last {
+    bottom: 0;
+}
+
+.brand {
+    width: 30%;
+    opacity: .8;
+}
+.brand p {
+    font-family: "Cinzel", serif;
+    color: #eaeeed;
+}
+
+.social {
+    display: flex;
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+.social a {
+    color: #eaeeed;
+    margin: 5px;
+    margin-bottom: 0px;
+    
+}
+
+.ig:hover {
+    opacity: 1;
+    color: #c02993;
+    transition: .7s ease;
+}
+
+.ws:hover {
+    opacity: 1;
+    color: #1cd82c;
+    transition: .7s ease;
+}
+
+.vk:hover {
+    opacity: 1;
+    color: #385cac;
+    transition: .7s ease;
+    
+}
+
+.inf-foot {
+    font-optical-sizing: auto;
+    color: #eaeeed;
+    margin-top: 0;
+    height: 490px;
+}
+.informations {
+    list-style: none;
+    font-size: 26px;
+    padding-left: 10px;
+    font-optical-sizing: auto;
+    color: #eaeeed;
+    
+
+}
+.informations a {
+    text-decoration: none;
+    color: #eaeeed;
+    margin: 10px;
+    opacity: .8;
+}
+
+.informations a:hover {
+    opacity: 1;
+}
+.informations li {
+    margin-bottom: 10px;
+}
+.social-btn a  {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 30px;
+    font-family: "Roboto Slab", serif;
+    text-decoration: none;
+    color: #eaeeed;
+    opacity: .7;
+    margin-top: 0;
+}
+.social-btn a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.our-info {
+    width: 40%;
+}
+
+
+.foot-contact {
+    width: 30%;
+    color: #eaeeed;
+    padding: 10px;
+    font-size: 26px;
+    opacity: .85;
+}
+
+.email {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.email p {
+    margin: 10px;
+}
+.feedback-btn {
+    border-radius: 6px;
+    background-color: rgb(84, 94, 72);
+    transition: all .2s ease;
+    padding: 8px 22px;
+    border: none;
+    color: #eaeeed;
+    font-size: 20px;
+
+}
+.feedback-btn:active {
+    transform: scale(0.96);
+    box-shadow: 0 1px 40px #a39f9f;
+}
+.addres {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.visa-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.visa-text {
+    font-family: "Roboto Slab", serif;
+    opacity: 0.7;
+    color: #eaeeed;
+    margin: 25px;
+    padding-left: 55px;
+}
+
+
+/* Стили для модального окна */
+.modal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  /* Стили для содержимого модального окна */
+  .modal-content {
+    background-color: #eaeeed;
+    opacity: .98;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #3a3a3a;
+    width: 20%;
+    box-shadow: 0 5px  20px rgb(66, 66, 66);
+    border-radius: 10px;
+
+  }
+  /* Стили для кнопки закрытия */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 38px;
+    font-weight: bold;
+    
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .callback-icon {
+    font-size: 32px;
+    
+  }
+.callback-icon:hover {
+    transform: scale(1.2);
+    transition: .6s ease-in-out;
+    color: #548f59;
+}
+
+.inputs-box {
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 30px;
+}
+
+.calback-text {
+  }
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .inputs p {
+    margin: 10px 0 5px;
+    font-family: "Roboto Slab", serif;
+  }
+  
+  .inputs input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+  }
+  
+  .inputs button {
+    padding: 10px 40px;
+    background-color: #41a051;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow:  0   2px  20px rgb(66, 66, 66);
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    margin-top: 20px;
+
+  }
+  
+  .inputs button:hover {
+    background-color: #1f420b;
+  }
+  
+  /* Стили для кнопки закрытия */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+.inputs input {
+    width: 60%;
+    height: 26px;
+    border: #526146 solid 2px;
+    border-radius: 10px;
+}
+  
+
+
+
+
+
+
+
+
+/*о нас*/
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin: 15px;
+    padding: 15px;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 80px;
+
+}
+
+
+
+.princip123 {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin: 15px;
+    padding: 15px;
+}
+
+.princip45 {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    
+    margin: 15px;
+    padding: 15px;
+}
+
+.princip {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    width: 30%;
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    border-radius:10px;
+
+    
+}
+.princip:hover {
+    transform: scale(1.05);
+    transition: 3s;
+}
+
+
+.icon {
+    font-size: 80px;
+    margin-top: 23px;
+    padding-right: 10px;
+}
+.princip123 hr {
+    width:90% ;
+}
+.princip45 hr {
+    width:90% ;
+}
+
+.princip p {
+    padding-right: 15px;
+}
+
+.princip h3 {
+    padding-left: 25px;
+}
+
+
+.img-cont {
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+
+.img-cont img {
+    border-radius: 10px;
+    border: #575757 solid 3px;
+    box-shadow: 1px 5px 10px -5px rgb(73, 73, 73);
+    margin-left: 60px;
+
+}
+
+.about-text h3 {
+    font-size: 80px;
+    margin-top: 15px;
+    padding-left: 30px;
+    font-family: "Cinzel", serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+    padding-left: 60px;
+}
+.about-text p {
+    padding-right: 50px;
+    font-size: 24px;
+    padding-left: 30px;
+}
+
+.story p {
+    padding-right: 50px;
+    font-size: 24px;
+    padding-left: 30px;
+}
+
+
+.story h3 {
+padding-left: 50px;
+font-size: 40px;
+font-weight: 400;
+}
+
+.work {
+    width: 550px;
+    height: 600px;
+    
+    margin: 15px;
+}
+.work img {
+    border-radius: 10px;
+}
+
+
+.work3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    padding: 15px;
+}
+
+
+
+
+.studio-box {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin: 15px;
+    padding: 15px;
+}
+.image-container img {
+    border-radius: 10px;
+ 
+}
+.image-container img:hover {
+    transform: scale(1.2);
+    transition: all 1.5s;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center images horizontally */
+}
+.image-container img {
+    flex: 1 1 150px; /* Allow images to grow and shrink, minimum width 150px */
+    width: 350px;
+    height: 440px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+
+.varianty p {
+    font-family: "Roboto Slab", serif;
+    padding: 105px;
+}
+
+
+
+.delivery {
+    align-items: center;
+    width: 60%;
+    font-family: "Roboto Slab", serif;
+    margin-bottom:  70px;
+    padding-bottom: 30px;
+    line-height: 1.5;
+    padding: 15px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+    border-radius: 10px;
+    margin-top: 40px;
+    
+    
+}
+.delivery-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-box {
+    margin: 15px;
+    padding: 15px;
+    font-size: 300px;
+    align-items: center;
+}
+
+.social12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.social12 a {
+    color: black;
+    opacity: .8;
+    margin-right: 160px;
+    margin-left: 10%;
+}
+.social3 a {
+    color: black;
+    opacity: .8;
+    padding-top: 50px;
+    margin-right: 20px;
+}
+.social3  {
+    display: flex;
+    justify-content: center;
+}
+
+.foot-contact h3{
+    padding-top: 40px;
+}
+
+.title {
+    font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
